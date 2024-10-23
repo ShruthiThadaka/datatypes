@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //primitive
+        let a = "Shruthi  1";
+        console.log(typeof a)
+        console.log(a)
+
+        let b = true
+        console.log(typeof b)
+        let b1 = true
+        console.log(typeof b1)
+
+        let c = 1.5;
+        console.log(typeof c)
+        let d = 5;
+        console.log(typeof d)
+
+        let x;
+        console.log(typeof x)
+        // const y;
+        // console.log(typeof y)   Uncaught SyntaxError: Missing initializer in const declaration
+
+        let p = null;
+        console.log(typeof p)  //the output is object because it is a bug
+
+        //Non Primitive
+        let obj = {
+            name: "Shruthi",
+            gender: "female",
+            Degree: {
+                btech: {
+                    marks: {
+                        maths: "90",
+                        physics: "80",
+                        chemistry: "70"
+                    }
+                }
+            }
+        }
+        console.log(typeof obj)
+        console.log(obj.Degree)
+        console.log(obj.Degree.btech.marks.maths)
+         
+        let arr = [1,2,3,4,5]
+        console.log(typeof arr)
+        console.log(arr[2])
+
+    </script>
+</body>
+
+</html>
